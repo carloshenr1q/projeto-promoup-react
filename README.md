@@ -1,1 +1,1 @@
-Transferindo o site PromoUp feito em HTML/CSS/JS puro p/ React
+Transferindo o site PromoUp feito em HTML/CSS/JS puro para framework React
