@@ -1,0 +1,17 @@
+section#valores{
+    background: url(../../../image/images/valores/banner-desktop.png) center center scroll;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 773px) { /* TABLET */
+    main > section.valores{
+        background: gray url(../assets/images/valores/banner-mobile.png) center top scroll;
+        background-size: cover;
+    }
+}
+@media only screen and (max-width: 772px){ /* MOBILE */
+    main > section.valores{
+        background: gray url(../assets/images/valores/banner-mobile.png) center bottom scroll;
+        background-size: cover;
+    }
+}

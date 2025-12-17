@@ -1,0 +1,21 @@
+/* Header.css */
+
+/* Quando o React adicionar o id="menu-ativo", a cor muda */
+header > div > svg#menu-ativo {
+    color: #E48E16;
+}
+header > div > img{
+    touch-action: none;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Quando o React adicionar o id="ativo", o menu aparece */
+/* O seletor de ID tem prioridade sobre a classe 'hidden' do Tailwind */
+nav#ativo {
+    display: block; 
+    max-height: 170px; /* Aumentei um pouco para garantir que não corte itens */
+    opacity: 1;        
+    transition: max-height 1s ease, opacity 0.8s ease;
+}

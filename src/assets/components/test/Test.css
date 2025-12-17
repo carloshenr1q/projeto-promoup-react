@@ -1,0 +1,36 @@
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 500px;
+  min-width: 0;
+}
+div.picture{
+    background-color: white;
+
+    height: 290px;
+    width: 260px;
+    padding: 5px 10px 0px 10px;
+    margin: 0 30px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+div.picture > img.imagem{
+    height: 250px;
+    width: 250px;
+
+    object-fit: cover; /* Ajustando a imagem para o tamanho da caixa */
+}
+div.picture > p{
+    font-family: "Sriracha", cursive;
+    font-size: 1.05em;
+    color: black;
+
+    height: 35px;
+    padding: 2px 0px;
+}

@@ -1,0 +1,17 @@
+section#marketing{
+    background: black url(../../../image/images/marketing/background-marketing.webp) center center scroll;
+    background-size: cover;
+  }
+
+@media (max-width: 992px) {
+  section#marketing{
+      background: url(../../../image/images/marketing/background-marketing-mobile.webp) right top;
+  }
+  section#marketing > article{
+    min-height: 160px;
+    min-width: 370px;
+    margin: auto;
+
+    opacity: 95%; /* Criando design único pra dispositivos mobile */
+  }
+}
