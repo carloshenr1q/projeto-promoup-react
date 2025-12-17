@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../Root.css';
 import Tipos from './article/Tipos';
-import tiposData from '../../../../data/tiposData.JSON';
+import tiposData from '../../../../data/tiposData.json';
 
 const Servicos = ({titulo}) => {
     return(
