@@ -10,7 +10,7 @@ const Tipos = ({ TituloServico, descricao, navImgs }) => {
     align: 'start',
     dragFree: true, // Sensação de "free scroll" similar ao nativo
     breakpoints: {
-      '(min-width: 1596px)': { active: false },
+      '(min-width: 1408px)': { active: false },
     }
   });
 
@@ -49,14 +49,14 @@ const Tipos = ({ TituloServico, descricao, navImgs }) => {
       <div className="bg-header mt-[20px] h-auto w-[100%] flex flex-col items-center justify-evenly overflow-hidden gap-y-[20px] py-[10px]">
         
         {/* Wrapper do Embla (Viewport) */}
-        {/* Quando ativo (<=1595px), o overflow-hidden segura o carrossel. 
-            Quando inativo (>1595px), age como um container flex normal */}
+        {/* Quando ativo (<=1408px), o overflow-hidden segura o carrossel. 
+            Quando inativo (>1408px), age como um container flex normal */}
         <div 
-          className="w-[100%] overflow-hidden max-[1595px]:cursor-grab max-[1595px]:active:cursor-grabbing" 
+          className="w-[100%] overflow-hidden max-[1408px]:cursor-grab max-[1408px]:active:cursor-grabbing" 
           ref={emblaRef}
         >
           {/* Container dos Slides (flex-row) */}
-          <div className="flex flex-row items-center pointer-events-none max-[1595px]:gap-y-[20px] justify-evenly max-[1595px]:justify-evenly user-select-none">
+          <div className="flex flex-row items-center pointer-events-none max-[1408px]:gap-y-[20px] justify-evenly max-[1408px]:justify-start user-select-none">
             {navImgs.map((item, index) => (
               // Slide Individual
               <div
@@ -81,8 +81,8 @@ const Tipos = ({ TituloServico, descricao, navImgs }) => {
           </div>
         </div>
 
-        {/* Barra de Progresso (Visível apenas <= 1595px) */}
-        <div className="hidden transition duration-1000 ease-in-out  max-[1595px]:flex w-[80%] max-w-[300px] h-[8px] bg-gray-300 rounded-full mt-[-9px] overflow-hidden">
+        {/* Barra de Progresso (Visível apenas <= 1408px) */}
+        <div className="hidden transition duration-1000 ease-in-out  max-[1408px]:flex w-[80%] max-w-[300px] h-[8px] bg-gray-300 rounded-full mt-[-9px] overflow-hidden">
           <div
             className="h-full bg-ceo-fonte" // Use a cor do seu tema aqui
             style={{ width: `${scrollProgress}%` }}
