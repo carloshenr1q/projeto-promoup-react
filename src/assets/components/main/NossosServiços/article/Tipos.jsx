@@ -9,6 +9,7 @@ const Tipos = ({ TituloServico, descricao, navImgs }) => {
     loop: false,
     align: 'start',
     dragFree: true, // Sensação de "free scroll" similar ao nativo
+    containScroll: 'trimSnaps',
     breakpoints: {
       '(min-width: 1408px)': { active: false },
     }

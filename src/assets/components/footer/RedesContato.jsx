@@ -31,7 +31,7 @@ const RedesContato = ({logo, alt, slogan, redes, href, target, rel, fraseContato
                     <h3 className="font-montserrat font-[450] text-white text-[19px]">{fraseContato}</h3>
                     <ul className="h-[140px] flex flex-col justify-evenly 
                     max-[992px]:gap-y-[10px]">
-                        <li className="text-white cursor-pointer flex gap-x-[8px] text-[16.5px] font-[450]
+                        <li className="text-white cursor-default flex gap-x-[8px] text-[16.5px] font-[450]
                         max-[992px]:font-[400]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 24 24" className="cursor-pointer transition-all duration-[0.5s] ease-in-out"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586z"></path></svg>Segunda à Sexta: 9h - 18h 
                         </li>

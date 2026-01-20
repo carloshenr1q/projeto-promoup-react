@@ -78,7 +78,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             fraseContato="Estamos Aqui para Você"
-            direitos="© PromoUP 2025. Todos os Direitos Reservados."
+            direitos="© PromoUP 2026. Todos os Direitos Reservados."
           />
       </footer>
       <BolhaWhatsapp
