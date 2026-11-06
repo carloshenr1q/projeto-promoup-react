@@ -1,0 +1,6 @@
+li svg{
+    color: white;
+}
+li:hover svg{
+    color: #E48E16;
+}

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Poppins:ital,wght@0,300;0,400;0,600;1,300&family=Sriracha&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-sriracha: "Sriracha", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+
+    --color-header: #2F0F4E;
+    --color-footer-fundo: #4c0494;
+    --color-marketing-fundo: #2C0F39;
+    --color-marketing-fonte: #E48E16;
+    --color-marketing-fundoBotao: #340C43;
+    --color-sobre-fundo: #F6F9F5;
+    --color-ceo-fonte: #E48E16;
+    --color-transparent: #ffffff00;
+}
