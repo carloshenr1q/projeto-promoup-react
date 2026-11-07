@@ -134,11 +134,11 @@ const Depoimentos = ({ titulo }) => {
         </h2>
 
         {/* Wrapper Relativo para posicionar as setas */}
-        <div className="relative w-full px-[50px] max-[576px]:px-[38px]">
+        <div className="relative w-full px-[50px] max-[576px]:px-[28px]">
           
-          {/* VIEWPORT DO EMBLA */}
+          {/* VIEWPORT DO EMBLA COM FADE LATERAL */}
           <div
-            className={`overflow-hidden w-full transition-all duration-700 delay-150 ease-out ${
+            className={`overflow-hidden w-full transition-all duration-700 delay-150 ease-out [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)] [-webkit-mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)] md:[mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)] md:[-webkit-mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)] ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
             ref={emblaRef}
@@ -148,11 +148,11 @@ const Depoimentos = ({ titulo }) => {
                 <div 
                   key={index} 
                   // flex-[0_0_X%] define a largura do slide. 
-                  // 100% no mobile, 60% no desktop para que os vizinhos apareçam
-                  className="flex-[0_0_100%] min-w-0 md:flex-[0_0_60%] lg:flex-[0_0_50%] pl-[10px]"
+                  // 86% no mobile (centralizado e com respiro), 60% / 50% no desktop
+                  className="flex-[0_0_86%] min-w-0 md:flex-[0_0_60%] lg:flex-[0_0_50%] px-2"
                 >
                   {/* slide_inner é quem recebe a animação de escala */}
-                  <div className="slide_inner transition-transform duration-75 ease-out text-[white] flex flex-col justify-center items-center w-full min-h-[300px] bg-white/5 rounded-xl p-6 border border-white/10 backdrop-blur-sm pointer-events-none select-none">
+                  <div className="slide_inner transition-transform duration-75 ease-out text-[white] flex flex-col justify-center items-center w-full min-h-[300px] bg-white/5 rounded-xl p-6 max-[400px]:p-4 border border-white/10 backdrop-blur-sm pointer-events-none select-none">
                     <div>
                       <p className="font-poppins font-[250] text-center italic text-[1.1em]">
                         {item.texto}
