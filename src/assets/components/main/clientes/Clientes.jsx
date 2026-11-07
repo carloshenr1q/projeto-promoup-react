@@ -32,15 +32,19 @@ const Clientes = ({ titulo }) => {
             max-[992px]:pt-[0px]
             max-[992px]:pb-[10px]"
     >
-      <h2 className="font-montserrat text-[2.5em] font-[700] uppercase text-center text-ceo-fonte
-            max-[992px]:text-[2em]
-            max-[992px]:my-[-7px]">
+      <h2
+        className={`font-montserrat text-[2.5em] font-[700] uppercase text-center text-ceo-fonte max-[992px]:text-[2em] max-[992px]:my-[-7px] transition-all duration-700 ease-out ${
+          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+        }`}
+      >
         {titulo}
       </h2>
 
       {/* WRAPPER DO EMBLA (Viewport) */}
       <div
-        className="w-[100%] overflow-hidden max-[992px]:cursor-grab max-[992px]:active:cursor-grabbing"
+        className={`w-[100%] overflow-hidden max-[992px]:cursor-grab max-[992px]:active:cursor-grabbing transition-all duration-800 delay-150 ease-out ${
+          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+        }`}
         ref={emblaRef}
       >
         {/* CONTAINER DOS SLIDES */}
@@ -55,16 +59,12 @@ const Clientes = ({ titulo }) => {
           {imgsData.map((item, index) => (
             <div 
               key={index}
-              style={{ transitionDelay: isVisible ? `${index * 75}ms` : '0ms' }}
-              className={`flex items-center justify-center flex-shrink-0 
+              className="flex items-center justify-center flex-shrink-0 
                          max-[992px]:mx-[40px] 
                          min-[993px]:w-auto
-                         max-[992px]:select-none
-                         transition-all duration-700 ease-out
-                         ${isVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'}`}
+                         max-[992px]:select-none"
             >
               <img
-                loading="lazy"
                 className="w-[clamp(50px,15vw,245px)] object-contain
                            max-[992px]:w-[190px]
                            max-[992px]:pointer-events-none 
